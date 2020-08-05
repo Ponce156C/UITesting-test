@@ -1,24 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--principalView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="principalView" id="BYZ-38-t0r" customClass="principalController" customModule="paloIT_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coloca un numero de 14 - 16 digitos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nah-Bs-KMP">
+                                <rect key="frame" x="50" y="144" width="314" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="inputNumber"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdp-DY-jrd">
+                                <rect key="frame" x="72" y="228" width="270" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="CountNumbers"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Kdp-DY-jrd" secondAttribute="height" multiplier="27:3" id="6UZ-XB-dV6"/>
+                                </constraints>
+                                <state key="normal" title="CALCULAR NUMERO DE LA SUERTE"/>
+                                <connections>
+                                    <action selector="calculeteNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJv-8u-vXs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6u-Uo-aak">
+                                <rect key="frame" x="50" y="358" width="314" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="principalView"/>
+                        <constraints>
+                            <constraint firstItem="G6u-Uo-aak" firstAttribute="top" secondItem="Kdp-DY-jrd" secondAttribute="bottom" constant="100" id="Ck3-cp-kU0"/>
+                            <constraint firstItem="G6u-Uo-aak" firstAttribute="trailing" secondItem="nah-Bs-KMP" secondAttribute="trailing" id="QaR-lr-y4D"/>
+                            <constraint firstItem="nah-Bs-KMP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="R4l-pG-bm7"/>
+                            <constraint firstItem="Kdp-DY-jrd" firstAttribute="centerX" secondItem="nah-Bs-KMP" secondAttribute="centerX" id="RDd-87-b6G"/>
+                            <constraint firstItem="nah-Bs-KMP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Szg-WD-bUf"/>
+                            <constraint firstItem="Kdp-DY-jrd" firstAttribute="top" secondItem="nah-Bs-KMP" secondAttribute="bottom" constant="50" id="ali-Lt-66h"/>
+                            <constraint firstItem="G6u-Uo-aak" firstAttribute="leading" secondItem="nah-Bs-KMP" secondAttribute="leading" id="doH-Op-1Hw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nah-Bs-KMP" secondAttribute="trailing" constant="50" id="xxE-on-Ulu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="inputNumber" destination="nah-Bs-KMP" id="zmW-Oy-5JD"/>
+                        <outlet property="numberButton" destination="Kdp-DY-jrd" id="Jfn-1p-1fv"/>
+                        <outlet property="numberLabel" destination="G6u-Uo-aak" id="xnl-hE-dcc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="129"/>
         </scene>
     </scenes>
 </document>

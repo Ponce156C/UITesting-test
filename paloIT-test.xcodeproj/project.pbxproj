@@ -13,7 +13,27 @@
 		753CB6B824D21A6700F45D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753CB6B624D21A6700F45D67 /* Main.storyboard */; };
 		753CB6BA24D21A6D00F45D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753CB6B924D21A6D00F45D67 /* Assets.xcassets */; };
 		753CB6BD24D21A6D00F45D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753CB6BB24D21A6D00F45D67 /* LaunchScreen.storyboard */; };
+		7545FF6B24DA2CFB0001BE46 /* paloITUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545FF6A24DA2CFB0001BE46 /* paloITUITests.swift */; };
+		7545FF7924DA2D810001BE46 /* paloITTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545FF7824DA2D810001BE46 /* paloITTests.swift */; };
+		7545FF8124DA43CE0001BE46 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545FF8024DA43CE0001BE46 /* utilities.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7545FF6D24DA2CFB0001BE46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 753CB6A524D21A6700F45D67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 753CB6AC24D21A6700F45D67;
+			remoteInfo = "paloIT-test";
+		};
+		7545FF7B24DA2D810001BE46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 753CB6A524D21A6700F45D67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 753CB6AC24D21A6700F45D67;
+			remoteInfo = "paloIT-test";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		753CB6AD24D21A6700F45D67 /* paloIT-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "paloIT-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +44,31 @@
 		753CB6B924D21A6D00F45D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		753CB6BC24D21A6D00F45D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		753CB6BE24D21A6D00F45D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7545FF6824DA2CFB0001BE46 /* paloITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = paloITUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7545FF6A24DA2CFB0001BE46 /* paloITUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paloITUITests.swift; sourceTree = "<group>"; };
+		7545FF6C24DA2CFB0001BE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7545FF7624DA2D810001BE46 /* paloITTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = paloITTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7545FF7824DA2D810001BE46 /* paloITTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paloITTests.swift; sourceTree = "<group>"; };
+		7545FF7A24DA2D810001BE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7545FF8024DA43CE0001BE46 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		753CB6AA24D21A6700F45D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7545FF6524DA2CFB0001BE46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7545FF7324DA2D810001BE46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,14 +82,19 @@
 			isa = PBXGroup;
 			children = (
 				753CB6AF24D21A6700F45D67 /* paloIT-test */,
+				7545FF6924DA2CFB0001BE46 /* paloITUITests */,
+				7545FF7724DA2D810001BE46 /* paloITTests */,
 				753CB6AE24D21A6700F45D67 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		753CB6AE24D21A6700F45D67 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				753CB6AD24D21A6700F45D67 /* paloIT-test.app */,
+				7545FF6824DA2CFB0001BE46 /* paloITUITests.xctest */,
+				7545FF7624DA2D810001BE46 /* paloITTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +111,25 @@
 				753CB6BE24D21A6D00F45D67 /* Info.plist */,
 			);
 			path = "paloIT-test";
+			sourceTree = "<group>";
+		};
+		7545FF6924DA2CFB0001BE46 /* paloITUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7545FF6A24DA2CFB0001BE46 /* paloITUITests.swift */,
+				7545FF8024DA43CE0001BE46 /* utilities.swift */,
+				7545FF6C24DA2CFB0001BE46 /* Info.plist */,
+			);
+			path = paloITUITests;
+			sourceTree = "<group>";
+		};
+		7545FF7724DA2D810001BE46 /* paloITTests */ = {
+			isa = PBXGroup;
+			children = (
+				7545FF7824DA2D810001BE46 /* paloITTests.swift */,
+				7545FF7A24DA2D810001BE46 /* Info.plist */,
+			);
+			path = paloITTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +152,42 @@
 			productReference = 753CB6AD24D21A6700F45D67 /* paloIT-test.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7545FF6724DA2CFB0001BE46 /* paloITUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7545FF6F24DA2CFB0001BE46 /* Build configuration list for PBXNativeTarget "paloITUITests" */;
+			buildPhases = (
+				7545FF6424DA2CFB0001BE46 /* Sources */,
+				7545FF6524DA2CFB0001BE46 /* Frameworks */,
+				7545FF6624DA2CFB0001BE46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7545FF6E24DA2CFB0001BE46 /* PBXTargetDependency */,
+			);
+			name = paloITUITests;
+			productName = paloITUITests;
+			productReference = 7545FF6824DA2CFB0001BE46 /* paloITUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7545FF7524DA2D810001BE46 /* paloITTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7545FF7D24DA2D810001BE46 /* Build configuration list for PBXNativeTarget "paloITTests" */;
+			buildPhases = (
+				7545FF7224DA2D810001BE46 /* Sources */,
+				7545FF7324DA2D810001BE46 /* Frameworks */,
+				7545FF7424DA2D810001BE46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7545FF7C24DA2D810001BE46 /* PBXTargetDependency */,
+			);
+			name = paloITTests;
+			productName = paloITTests;
+			productReference = 7545FF7624DA2D810001BE46 /* paloITTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +200,14 @@
 				TargetAttributes = {
 					753CB6AC24D21A6700F45D67 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					7545FF6724DA2CFB0001BE46 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 753CB6AC24D21A6700F45D67;
+					};
+					7545FF7524DA2D810001BE46 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 753CB6AC24D21A6700F45D67;
 					};
 				};
 			};
@@ -116,6 +225,8 @@
 			projectRoot = "";
 			targets = (
 				753CB6AC24D21A6700F45D67 /* paloIT-test */,
+				7545FF6724DA2CFB0001BE46 /* paloITUITests */,
+				7545FF7524DA2D810001BE46 /* paloITTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +239,20 @@
 				753CB6BD24D21A6D00F45D67 /* LaunchScreen.storyboard in Resources */,
 				753CB6BA24D21A6D00F45D67 /* Assets.xcassets in Resources */,
 				753CB6B824D21A6700F45D67 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7545FF6624DA2CFB0001BE46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7545FF7424DA2D810001BE46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +269,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7545FF6424DA2CFB0001BE46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7545FF8124DA43CE0001BE46 /* utilities.swift in Sources */,
+				7545FF6B24DA2CFB0001BE46 /* paloITUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7545FF7224DA2D810001BE46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7545FF7924DA2D810001BE46 /* paloITTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7545FF6E24DA2CFB0001BE46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 753CB6AC24D21A6700F45D67 /* paloIT-test */;
+			targetProxy = 7545FF6D24DA2CFB0001BE46 /* PBXContainerItemProxy */;
+		};
+		7545FF7C24DA2D810001BE46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 753CB6AC24D21A6700F45D67 /* paloIT-test */;
+			targetProxy = 7545FF7B24DA2D810001BE46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		753CB6B624D21A6700F45D67 /* Main.storyboard */ = {
@@ -316,6 +471,84 @@
 			};
 			name = Release;
 		};
+		7545FF7024DA2CFB0001BE46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLMN9EM3Q9;
+				INFOPLIST_FILE = paloITUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = poncedevs.paloITUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "paloIT-test";
+			};
+			name = Debug;
+		};
+		7545FF7124DA2CFB0001BE46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLMN9EM3Q9;
+				INFOPLIST_FILE = paloITUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = poncedevs.paloITUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "paloIT-test";
+			};
+			name = Release;
+		};
+		7545FF7E24DA2D810001BE46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLMN9EM3Q9;
+				INFOPLIST_FILE = paloITTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = poncedevs.paloITTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/paloIT-test.app/paloIT-test";
+			};
+			name = Debug;
+		};
+		7545FF7F24DA2D810001BE46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLMN9EM3Q9;
+				INFOPLIST_FILE = paloITTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = poncedevs.paloITTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/paloIT-test.app/paloIT-test";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +566,24 @@
 			buildConfigurations = (
 				753CB6C224D21A6D00F45D67 /* Debug */,
 				753CB6C324D21A6D00F45D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7545FF6F24DA2CFB0001BE46 /* Build configuration list for PBXNativeTarget "paloITUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7545FF7024DA2CFB0001BE46 /* Debug */,
+				7545FF7124DA2CFB0001BE46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7545FF7D24DA2D810001BE46 /* Build configuration list for PBXNativeTarget "paloITTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7545FF7E24DA2D810001BE46 /* Debug */,
+				7545FF7F24DA2D810001BE46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
