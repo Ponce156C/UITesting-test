@@ -7,11 +7,11 @@ _Involucra distintos conocimientos como constrains, metodos para evitar fugas de
 
 * Explico brevemente un fragmento de codigo
 
-´´´
+```
   measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
    
   }
-´´´
+```
 _Esta parte es importante comentar, ya que nos permite obtener metricas sobre el rendimiento de nuestro codigo con la intencion de comparar el tiempo y cantidad de recursos que se llegan a utilizar._
 _Para esto utilizamos en su primera version ciclos for anidados con la intención de añadir los caracteres introducidos por un textfield a un arrray y posteriormente comparar._
 _La versión final utilizamos foreach con expresiones matematicas para reducir la cantidad de codigo, mejorar el rendimiento del proceso y abstraer los datos._
